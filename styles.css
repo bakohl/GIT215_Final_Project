@@ -1,0 +1,330 @@
+:root{
+
+    --peach: #D96F32;
+    --dk-blue: #192E59; 
+    --lt-blue: #4992BF;
+    --dk-green: #7C8C03;
+    --br-green: #736002;
+
+    --white: #fff;
+    --lt-gray: #eaeaea;
+    --med-gray: #555;
+    --dk-gray: #222;
+    --black: #0D0D0D;
+
+    --fonts1: "alpine-script", sans-serif;
+    --fonts2: "oso-sans" , sans-serif;
+}
+
+
+header, body, main, footer{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+body {
+    background-color: var(--dk-gray);
+    font-family: var(--fonts2);
+}
+header {
+    background: url(images/swiss-valley.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    padding: 2rem;
+    justify-content: right;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--fonts1);
+    font-size: 14rem;
+    font-weight: lighter;
+    align-content: end;
+    color: var(--dk-gray);
+    padding: 2rem 0 0 0;
+    margin: 0;
+}
+   
+nav {
+	margin: 0;
+	padding: 0;
+    position: relative;
+
+    
+}
+ul {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+    margin: 0 auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+nav a{
+	display: flex;
+	margin: 0;
+	padding: 0.5rem;
+	text-align: center;
+    color: var(--dk-gray);
+	text-decoration: none;
+    align-items: center;
+	font-size: 2rem;
+    font-weight: bold;
+    border-top: 4px solid var(--dk-gray);
+    border-bottom: 4px solid var(--dk-gray);
+}
+nav a:hover{
+	display: flex;
+	margin: 0;
+	padding: 0.5rem;
+	text-align: center;
+    color: var(--lt-gray);
+	text-decoration: none;
+    align-items: center;
+	font-size: 2rem;
+    font-weight: bold;
+    border-top: 4px solid var(--dk-gray);
+    border-bottom: 4px solid var(--dk-gray);
+}
+
+li {
+    display: block;
+}
+
+main {
+    border-top: 10px solid var(--dk-green);
+    background:var(--lt-blue) url(images/subtle-grunge.png);
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+h2 {
+    font-family: var(--fonts1);
+    font-size: 5.5rem;
+    font-weight: lighter;
+    padding: 2rem 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+}
+main > p {
+    font-family: var(--fonts2);
+    max-width: 85ch;
+    text-indent: 2rem;
+    text-align: left;
+    margin: 0 auto 2rem auto;
+    padding: 0 0 2rem 0;
+    word-wrap: break-word;
+}
+#options { 
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+#options img {
+    width: 450px;
+    justify-content: right;
+    border-radius: 20px;
+}
+#group1 {
+    font-family: var(--fonts2);
+    align-items: center;
+}
+#group2 {
+    font-family: var(--fonts2);
+    align-content: center;
+}
+section > p {
+    font-family: var(--fonts2);
+    word-wrap: break-word;
+    max-width: 50ch;
+    text-indent: 2rem;
+    text-align: left;
+    margin: auto;
+}
+#contacttitle {
+    display: grid;
+    max-width: 112ch;
+    margin: 0;
+    vertical-align: bottom;
+}
+
+#contacttitle > h2 {
+    font-family: var(--fonts1);
+    font-size: 5.5rem;
+    font-weight: lighter;
+    max-width: 60ch;
+    text-align: left;
+    vertical-align: bottom;
+
+}
+#contacts {
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+#contacts > section > p {
+    font-family: var(--fonts2);
+    max-width: 350px;
+    text-indent: 2rem;
+    text-wrap: wrap;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+#contacts img {
+    width: 350px;
+    height: 405px;
+    border-radius: 20px;
+}
+
+#group3 {
+    font-family: var(--fonts2);
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#group4 {
+    font-family: var(--fonts2);
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+}
+#form{
+    width: 100%;
+    max-width: 350px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+input, label, textarea{
+    display: block;
+}
+
+.required{
+    color: var(--peach);
+}
+
+input, textarea{
+    margin: 0.25rem 0 1rem 0;
+    width: calc(100% - 8px);
+    border: 2px solid var(--dk-gray);
+}
+
+input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
+    border-color: var(--dk-gray);
+    outline: 2px solid var(--dk-gray);
+}
+
+input{
+    height: 2rem;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 0.25fr 6fr 0.25fr 6fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    border-color: var(--dk-gray);
+    padding: 0.35em 0.75em 0.625em 0.75em;
+    border: 2px groove var(--dk-gray);
+
+}
+legend{
+    padding: 0 2px;
+}
+
+input[type=radio] + label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+input[type=radio] {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    border-radius: 0;
+}
+
+input[type=radio] + label::before {
+        content: "\00a0";
+        font-size: 2.25em;
+        line-height: 0.35;
+        border-radius: 50%;
+        display: inline-block;  
+        height: 20px;
+        width: 22px;
+        text-align: center;
+        margin-right: 16px;
+        border: 2px solid var(--dk-gray);
+        background-color: var(--lt-gray);
+      padding-bottom: 2px;
+    }
+
+input[type=radio]:checked + label::before {
+        content: "\2022";
+        color: var(--dk-green);
+        background: var(--dk-green);
+}
+
+input[type=radio]:focus{
+	outline: none;
+}
+
+input[type=radio]:focus + label::before {
+    box-shadow: 0 0 0 2px var(--dk-gray);
+}
+
+textarea{
+    height: 5rem;
+}
+
+#my-submit{
+    padding: 1rem 8px;
+    margin: 1rem auto;
+    width: 100%;
+    height: auto;
+    background-color: var(--dk-blue);
+    color: var(--lt-gray);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#my-submit:hover{
+    background-color: var(--lt-gray);
+    color: var(--dk-blue);
+    border: none;
+}
+figure{
+    margin: 1em 40px;
+}
+
+
+
+
+footer {
+    border-top: 10px solid var(--dk-green);
+    background-color: var(--dk-blue);
+    color: var(--lt-gray);
+    padding: 1rem;
+    text-align: center;
+}
